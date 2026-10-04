@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Thực hành] Danh sách trong CSS</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- 1. Liên kết file CSS với HTML -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header chính của trang -->
+        <header class="page-header">
+            <h1>[Thực hành] Định kiểu Danh sách trong CSS</h1>
+            <p>Luyện tập sử dụng các thuộc tính list-style-type, list-style-image, list-style-position, list-style, màu sắc và khoảng cách</p>
+        </header>
+
+        <!-- 2. Thay đổi kiểu đánh dấu danh sách không thứ tự (square) -->
+        <section class="exercise-card">
+            <h2 class="card-title">
+                <i class="fa-solid fa-square" style="color: var(--primary); font-size: 14px;"></i>
+                2. Thay đổi kiểu đánh dấu danh sách (Unordered List)
+            </h2>
+            <p class="card-desc">
+                Sử dụng thẻ <code>&lt;ul&gt;</code> với thuộc tính: <span class="code-tag">list-style-type: square;</span>
+            </p>
+            <ul class="list-square">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+            </ul>
+        </section>
+
+        <!-- 3. Thay đổi kiểu đánh dấu danh sách có thứ tự (upper-roman) -->
+        <section class="exercise-card">
+            <h2 class="card-title">
+                <i class="fa-solid fa-list-ol" style="color: var(--primary);"></i>
+                3. Thay đổi kiểu đánh dấu danh sách có thứ tự (Ordered List)
+            </h2>
+            <p class="card-desc">
+                Sử dụng thẻ <code>&lt;ol&gt;</code> đánh số La Mã viết hoa: <span class="code-tag">list-style-type: upper-roman;</span>
+            </p>
+            <ol class="list-upper-roman">
+                <li>Học HTML</li>
+                <li>Học CSS</li>
+                <li>Học JavaScript</li>
+                <li>Học Git</li>
+            </ol>
+        </section>
+
+        <!-- 4. Sử dụng hình ảnh làm dấu đánh dấu (list-style-image) -->
+        <section class="exercise-card">
+            <h2 class="card-title">
+                <i class="fa-regular fa-image" style="color: var(--primary);"></i>
+                4. Sử dụng hình ảnh làm dấu đánh dấu
+            </h2>
+            <p class="card-desc">
+                Sử dụng hình ảnh icon tùy chỉnh: <span class="code-tag">list-style-image: url('star-icon.png');</span>
+            </p>
+            <ul class="list-image">
+                <li>Visual Studio Code</li>
+                <li>Google Chrome</li>
+                <li>GitHub</li>
+                <li>Git</li>
+            </ul>
+        </section>
+
+        <!-- 5. Thay đổi vị trí dấu đánh dấu (outside vs inside) -->
+        <section class="exercise-card">
+            <h2 class="card-title">
+                <i class="fa-solid fa-arrows-left-right" style="color: var(--primary);"></i>
+                5. Thay đổi vị trí dấu đánh dấu (list-style-position)
+            </h2>
+            <p class="card-desc">
+                So sánh giữa <span class="code-tag">outside</span> (dấu nằm ngoài lề hộp nội dung) và <span class="code-tag">inside</span> (dấu nằm bên trong dòng văn bản):
+            </p>
+            <div class="position-grid">
+                <!-- Danh sách 1: outside -->
+                <div class="position-col">
+                    <h4>Vị trí: outside (mặc định)</h4>
+                    <ul class="list-outside">
+                        <li>HTML: Ngôn ngữ đánh dấu siêu văn bản</li>
+                        <li>CSS: Ngôn ngữ định kiểu giao diện web</li>
+                        <li>JavaScript: Ngôn ngữ lập trình tạo tương tác</li>
+                    </ul>
+                </div>
+
+                <!-- Danh sách 2: inside -->
+                <div class="position-col">
+                    <h4>Vị trí: inside</h4>
+                    <ul class="list-inside">
+                        <li>HTML: Ngôn ngữ đánh dấu siêu văn bản</li>
+                        <li>CSS: Ngôn ngữ định kiểu giao diện web</li>
+                        <li>JavaScript: Ngôn ngữ lập trình tạo tương tác</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Sử dụng thuộc tính rút gọn list-style -->
+        <section class="exercise-card">
+            <h2 class="card-title">
+                <i class="fa-solid fa-bolt" style="color: var(--primary);"></i>
+                6. Sử dụng thuộc tính rút gọn list-style
+            </h2>
+            <p class="card-desc">
+                Thiết lập đồng thời kiểu đánh dấu, vị trí và hình ảnh: <span class="code-tag">list-style: square inside url('bullet-icon.png');</span>
+            </p>
+            <ul class="list-shorthand">
+                <li>Responsive Web Design</li>
+                <li>CSS Flexbox & Grid Layout</li>
+                <li>CSS Animations & Transitions</li>
+                <li>CSS Variables & Custom Properties</li>
+            </ul>
+        </section>
+
+        <!-- 7. Tạo kiểu danh sách với màu sắc (background-color, color, padding, margin) -->
+        <section class="exercise-card">
+            <h2 class="card-title">
+                <i class="fa-solid fa-palette" style="color: var(--primary);"></i>
+                7. Tạo kiểu danh sách với màu sắc và khoảng cách
+            </h2>
+            <p class="card-desc">
+                Kết hợp <span class="code-tag">background-color</span>, <span class="code-tag">color</span>, <span class="code-tag">padding</span> và <span class="code-tag">margin</span>:
+            </p>
+            <ul class="list-colored">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+        <!-- 8. Bài tập tổng hợp: Lộ trình học lập trình Web -->
+        <section class="exercise-card">
+            <div class="roadmap-container">
+                <div class="roadmap-header">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>8. Bài tập tổng hợp: Lộ trình học lập trình Web</span>
+                </div>
+                <p class="roadmap-sub">
+                    Áp dụng toàn diện: list-style shorthand, màu nền, màu chữ, padding, margin, list-style-position
+                </p>
+                <ul class="list-roadmap">
+                    <li>HTML (HyperText Markup Language)</li>
+                    <li>CSS (Cascading Style Sheets)</li>
+                    <li>JavaScript (Ngôn ngữ lập trình Web phổ biến)</li>
+                    <li>Git (Hệ thống quản lý phiên bản mã nguồn)</li>
+                    <li>GitHub (Nền tảng lưu trữ và cộng tác dự án)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="page-footer">
+            <p>Bài thực hành: <strong>Danh sách trong CSS</strong> • Hoàn thành đầy đủ 8 mục yêu cầu</p>
+        </footer>
+    </div>
+
+</body>
+</html>
